@@ -28,5 +28,22 @@ nav ul { display: flex; gap: 20px; font-weight: bold; }
 .project-card { background: white; padding: 30px; border: 1px solid #ddd; text-align: left; }
 .project-card h3 { margin-bottom: 10px; font-size: 1.2rem; }
 
+/* 취향 (Like & Dislike) */
+.pref-grid { display: flex; gap: 20px; margin-top: 40px; }
+.pref-box { flex: 1; padding: 30px; border: 1px solid #ddd; text-align: left; background: #fff; }
+.pref-box h3 { font-size: 1.3rem; margin-bottom: 20px; border-bottom: 2px solid #111; padding-bottom: 10px; display: inline-block; }
+.pref-box ul { padding-left: 20px; list-style-type: square; color: #444; line-height: 1.8; }
+@media (max-width: 600px) {
+    .pref-grid { flex-direction: column; }
+}
+
+/* 자격증 (Certifications) */
+.cert-list { margin-top: 40px; text-align: left; max-width: 700px; margin-left: auto; margin-right: auto; }
+.cert-list li { display: flex; gap: 20px; padding: 15px 0; border-bottom: 1px dashed #ccc; align-items: center; }
+.cert-list li:last-child { border-bottom: none; }
+.cert-date { font-weight: bold; color: #111; min-width: 80px; }
+.cert-name { flex: 1; font-size: 1.1rem; color: #333; font-weight: 500; }
+.cert-org { color: #888; font-size: 0.9rem; min-width: 120px; text-align: right; }
+
 /* 하단 (푸터) */
 footer { padding: 30px; background: #222; color: #888; text-align: center; font-size: 0.8rem; }
