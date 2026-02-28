@@ -37,6 +37,18 @@ nav ul { display: flex; gap: 20px; font-weight: bold; }
     .pref-grid { flex-direction: column; }
 }
 
+/* 플레이리스트 (좋아하는 노래) 추가 스타일 */
+.playlist-box { margin-top: 30px; padding: 30px; border: 1px solid #ddd; background: #fff; text-align: left; }
+.playlist-box h3 { font-size: 1.3rem; margin-bottom: 20px; border-bottom: 2px solid #111; padding-bottom: 10px; display: inline-block; }
+.playlist-list { list-style: none; padding: 0; }
+.playlist-list li { border-bottom: 1px dashed #ccc; }
+.playlist-list li:last-child { border-bottom: none; }
+.playlist-list a { display: flex; justify-content: space-between; align-items: center; padding: 15px 0; color: #333; transition: all 0.3s ease; }
+.playlist-list a:hover { color: #111; font-weight: bold; padding-left: 10px; }
+.track-info { font-size: 1.05rem; }
+.play-icon { font-size: 0.9rem; color: #ff0000; font-weight: bold; opacity: 0.8; transition: 0.3s; }
+.playlist-list a:hover .play-icon { opacity: 1; }
+
 /* 자격증 (Certifications) */
 .cert-list { margin-top: 40px; text-align: left; max-width: 700px; margin-left: auto; margin-right: auto; }
 .cert-list li { display: flex; gap: 20px; padding: 15px 0; border-bottom: 1px dashed #ccc; align-items: center; }
@@ -45,7 +57,7 @@ nav ul { display: flex; gap: 20px; font-weight: bold; }
 .cert-name { flex: 1; font-size: 1.1rem; color: #333; font-weight: 500; }
 .cert-org { color: #888; font-size: 0.9rem; min-width: 150px; text-align: right; }
 
-/* 연락처 및 SNS 추가 스타일 */
+/* 연락처 및 SNS 스타일 */
 .contact-info { margin-top: 20px; font-size: 1.1rem; line-height: 1.8; color: #444; }
 .social-links { margin-top: 30px; display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
 .sns-btn { padding: 10px 25px; border: 1px solid #333; border-radius: 50px; font-weight: bold; font-size: 0.9rem; color: #333; transition: all 0.3s ease; }
